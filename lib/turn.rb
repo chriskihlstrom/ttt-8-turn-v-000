@@ -1,13 +1,11 @@
 
 def turn(board)
-  until index == true
+
     print "Please enter a 1-9:"
     #ask_for_input(board,index)
     input = gets.strip
     index = input_to_index(index)
-    position_taken?(board,index)
     valid_move?(board,index)
-  end
   move(board,index,value = "X")
   display_board(board)
 end
