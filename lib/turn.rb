@@ -30,7 +30,7 @@ def valid_move?(board,index)
   end
 end
 def move(board,index,value = "X")
-  board [index] = value
+  board[index] = value
 end
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
