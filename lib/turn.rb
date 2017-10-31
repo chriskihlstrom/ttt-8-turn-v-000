@@ -5,9 +5,13 @@ def turn(board)
     #ask_for_input(board,index)
     input = gets.strip
     index = input_to_index(index)
-    valid_move?(board,index)
+    if valid_move?(board,index)
+    
   move(board,index,value = "X")
   display_board(board)
+ else
+   
+ end
 end
 #def ask_for_input(board,index)
   #  print "Please enter a 1-9:"
