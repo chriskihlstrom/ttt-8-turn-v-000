@@ -6,11 +6,11 @@ def turn(board)
     input = gets.strip
     index = input_to_index(index)
     if valid_move?(board,index)
-    
+
   move(board,index,value = "X")
   display_board(board)
  else
-   
+   turn(board)
  end
 end
 #def ask_for_input(board,index)
